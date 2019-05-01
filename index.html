@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
+  <title>JS</title>
+</head>
+  <body>
+    <div id="inputs">
+      <label for="userInput">Name of the guest</label>
+      <input id="userInput" type="text" name="guest">
+      <label for="spliceStart">From witch guest start removing</label>
+      <input id="spliceStart" type="number" name="spliceAmount">
+      <label for="spliceDelete">How many guests to remove</label>
+      <input id="spliceDelete" type="text" name="spliceRemove">
+    </div>
+    <div id="buttons">
+      <button id="addGuestStart" type="button" name="addGuestStart">Add Guest to the end</button>
+      <button id="addGuestEnd"type="button" name="addGuestEnd">Add Guest to the start</button>
+      <button id="removeGuestFirst" type="button" name="removeGuestFirst">Remove first Guest</button>
+      <button id="removeGuestLast"type="button" name="removeGuestLast">Remove last Guest</button>
+      <button id="reverse" type="button" name="reverse">Reverse List</button>
+      <button id="removeFromTo" type="button" name="remove">Remove some of the guests</button>
+      <button id="clearLocalStorage" type="button" name="clearLocalStorage">Clear List</button>
+    </div>
+    <div id="guests">
+
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
