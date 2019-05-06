@@ -7,12 +7,26 @@
 </head>
   <body>
     <div id="inputs">
-      <label for="userInput">Name of the guest</label>
-      <input id="userInput" type="text" name="guest">
-      <label for="spliceStart">From witch guest start removing</label>
-      <input id="spliceStart" type="number" name="spliceAmount">
-      <label for="spliceDelete">How many guests to remove</label>
-      <input id="spliceDelete" type="text" name="spliceRemove">
+      <div class="input">
+        <label for="userInput">Name of the guest</label>
+        <input id="userInput" type="text" name="guest">
+      </div>
+      <div class="input">
+        <label for="spliceStart">From which guest start removing</label>
+        <input id="spliceStart" type="number" name="spliceAmount">
+      </div>
+      <div class="input">
+        <label for="spliceDelete">How many guests to remove</label>
+        <input id="spliceDelete" type="number" name="spliceRemove">
+      </div>
+      <div class="input">
+        <label for="lookingName">Which name to replace</label>
+        <input id="lookingName" type="text" name="lookingName">
+      </div>
+      <div class="input">
+        <label for="replaceName">Name for a replacement</label>
+        <input id="replaceName" type="text" name="replaceName">
+      </div>
     </div>
     <div id="buttons">
       <button id="addGuestStart" type="button" name="addGuestStart">Add Guest to the end</button>
@@ -21,6 +35,9 @@
       <button id="removeGuestLast"type="button" name="removeGuestLast">Remove last Guest</button>
       <button id="reverse" type="button" name="reverse">Reverse List</button>
       <button id="removeFromTo" type="button" name="remove">Remove some of the guests</button>
+      <button id="sortAZ" type="button" name="sortAZ">Sort guest from A-Z</button>
+      <button id="sortZA" type="button" name="sortZA">Sort guest from Z-A</button>
+      <button id="replace" type="button" name="replace">Replace</button>
       <button id="clearLocalStorage" type="button" name="clearLocalStorage">Clear List</button>
     </div>
     <div id="guests">
